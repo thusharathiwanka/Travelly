@@ -1,0 +1,292 @@
+/* Hero section */
+.hero {
+   background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url('../img/landing-page.jpg');
+   min-height: 90vh;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.hero h2 {
+   padding: 0.5rem 3rem 4rem 3rem;
+}
+
+.hero a,
+.locations a,
+.contact #submit-btn {
+   background-color: #4c6e97;
+   padding: 1.5rem 6rem;
+   font-family: 'montserrat', sans-serif;
+   font-size: 1.6rem;
+   font-weight: 500;
+   transition: background-color 0.3s ease-in;
+}
+
+.hero #main-title {
+   padding: 1rem;
+   animation: scale 0.8s forwards;
+}
+
+.hero #sub-title {
+   animation: fade-appear 1s ease-in;
+}
+
+#book {
+   animation: fade-appear 1s ease-in;
+}
+
+.hero a:hover,
+.contact #submit-btn:hover {
+   background-color: #2f455f;
+}
+
+/* Locations section */
+.locations {
+   min-height: 100vh;
+   background: linear-gradient(rgb(0, 0, 0, 0.6), transparent), url('../img/locations-section.jpg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   color: white;
+   position: relative;
+}
+
+.locations .content {
+   max-width: 90vw;
+   margin: auto;
+}
+
+.locations a {
+   background-color: #a88b54;
+}
+
+.locations a:hover {
+   background-color: #8d7445;
+}
+
+.locations h1 {
+   padding: 20rem 0 2rem 0;
+   text-decoration: underline;
+}
+
+.locations h2 {
+   padding-bottom: 4rem;
+   margin-left: 0;
+}
+
+/* Benefits section */
+.benefits {
+   min-height: 100vh;
+}
+
+.benefits .titles {
+   text-align: center;
+   padding: 2rem;
+   background-color: #131c27;
+   color: white;
+   min-height: 40vh;
+}
+
+.titles h1 {
+   padding: 8rem 1rem 0rem 1rem;
+}
+
+.benefits p {
+   font-size: 2rem;
+   font-family: 'poppins', sans-serif;
+}
+
+.benefits h1,
+.benefits h2 {
+   align-self: center;
+}
+
+.cards {
+   min-height: 60vh;
+   max-width: 90%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 2rem;
+}
+
+.card {
+   text-align: center;
+   width: 40rem;
+   height: 40vh;
+   margin: 4rem;
+   box-shadow: 0px 20px 20px rgb(0, 0, 0, 0.1),
+      10px 0px 30px rgb(0, 0, 0, 0.1);
+}
+
+.cards img {
+   width: 15rem;
+   height: 10rem;
+   margin: 4rem;
+}
+
+.card-icon {
+   background-color: #283a50;
+}
+
+.card p,
+h2 {
+   margin: 2rem;
+}
+
+/* Contact section */
+.contact {
+   min-height: 90vh;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('../img/contact-mountain.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.contact .content {
+   width: 90%;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.contact .form-container {
+   min-width: 40%;
+   height: 45vh;
+   background-color: rgb(19, 28, 39, 0.8);
+   margin-top: 25rem;
+   text-align: center;
+   position: relative;
+   border-radius: 20px;
+}
+
+.contact .form-title {
+   text-align: center;
+   padding: 4rem;
+}
+
+.contact #submit-btn {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   border: none;
+   color: white;
+   font-size: 2rem;
+   border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px;
+   cursor: pointer;
+}
+
+.contact label {
+   font-size: 2rem;
+   font-family: 'poppins', sans-serif;
+   color: white;
+   padding: 8rem 2rem;
+}
+
+.contact form input {
+   padding: 0.3rem;
+   font-size: 2rem;
+   outline: none;
+   font-family: 'poppins', sans-serif;
+   min-width: 40rem;
+   border: none;
+   border-radius: 4px;
+}
+
+.contact form .name,
+.contact form .email {
+   margin: 2rem 4rem;
+}
+
+.contact form .name input:focus,
+.contact form .email input:focus {
+   outline: 3px solid #4c6e97;
+}
+
+.contact h1 {
+   color: white;
+}
+
+/* Footer section */
+footer {
+   min-height: 10vh;
+   background: #131c27;
+   color: white;
+}
+
+footer .content {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 2rem;
+   width: 90%;
+   margin: auto;
+   align-items: center;
+   justify-content: space-between;
+   min-height: 10vh;
+}
+
+footer p {
+   flex: 4 4 40rem;
+   font-size: 3rem;
+   font-family: 'poppins', sans-serif;
+}
+
+footer ul {
+   list-style: none;
+   display: flex;
+   flex: 1 1 40rem;
+   justify-content: space-between;
+   align-items: center;
+}
+
+footer ul li {
+   margin: 1.5rem;
+}
+
+/* Media queries */
+@media(max-width: 757px) {
+   #menu {
+      display: inline;
+   }
+}
+
+@media(max-width: 512px) {
+   .form-container {
+      width: 100%;
+   }
+
+   .form-title {
+      font-size: 1rem;
+   }
+
+   .contact form .name input,
+   .contact form .email input {
+      padding: 0;
+      margin: 0;
+      width: 2rem;
+   }
+}
+
+@media(max-width: 360px) {
+
+   .contact form .name,
+   .contact form .email {
+      margin: 1rem 4rem;
+   }
+
+   .contact .form-title {
+      padding: 2rem;
+   }
+}
