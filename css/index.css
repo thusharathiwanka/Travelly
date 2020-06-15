@@ -118,6 +118,10 @@
    margin-top: 2rem;
 }
 
+.card:hover {
+   transform: scale(1.2);
+}
+
 .card {
    text-align: center;
    width: 40rem;
@@ -125,6 +129,7 @@
    margin: 4rem;
    box-shadow: 0px 20px 20px rgb(0, 0, 0, 0.1),
       10px 0px 30px rgb(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
 }
 
 .cards img {
